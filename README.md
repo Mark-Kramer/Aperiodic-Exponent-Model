@@ -1,0 +1,2 @@
+# Aperiodic-Exponent-Model
+ 
