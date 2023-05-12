@@ -2,7 +2,7 @@
 
 This repository contains code to perform the simulations and generate the figures in:
 
-[Title](Link)
+[A parsimonious model of the universal 1/f-like behavior of neural field spectra](https://www.biorxiv.org/content/10.1101/2023.03.10.532077v1)
 
 ---
 
