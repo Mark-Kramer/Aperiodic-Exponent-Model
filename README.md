@@ -10,3 +10,4 @@ This repository contains code to perform the simulations and generate the figure
 | --- | --- |
 | [Figure 1](./Figure-1.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mark-Kramer/Aperiodic-Exponent-Model/blob/main/Figure-1.ipynb) |
 | [Figure 2](./Figure-2.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mark-Kramer/Aperiodic-Exponent-Model/blob/main/Figure-2.ipynb) |
+| [Figure 3](./Figure-3.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Mark-Kramer/Aperiodic-Exponent-Model/blob/main/Figure-3.ipynb) |
