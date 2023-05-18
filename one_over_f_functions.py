@@ -36,14 +36,15 @@ def make_plots(t,x, f,S, x_linear_fit,y_linear_fit,aperiodic_exponent, axX,axS):
 # Plot aperiodic exponent versus noise.
 def make_plot_ae_vs_noise(res):
     aperiodic_exponents = res["aperiodic_exponents"]
-    noise_values      = res["noise_values"]
+    noise_values        = res["noise_values"]
+    color               = res["color"]
     
-    bounds = np.quantile(aperiodic_exponents,[0.025,0.975],1)
-    mean   = np.mean(aperiodic_exponents,1)
+    bounds = np.nanquantile(aperiodic_exponents,[0.025,0.975],1)
+    mean   = np.nanmean(aperiodic_exponents,1)
 
     plt.plot(np.squeeze(noise_values),mean,'k')
-    plt.plot(np.squeeze(noise_values),bounds[0,:],'red')
-    plt.plot(np.squeeze(noise_values),bounds[1,:],'red')
-    plt.fill_between(np.squeeze(noise_values),bounds[0,:],bounds[1,:], facecolor='red', alpha=0.5)
+    plt.plot(np.squeeze(noise_values),bounds[0,:],color)
+    plt.plot(np.squeeze(noise_values),bounds[1,:],color)
+    plt.fill_between(np.squeeze(noise_values),bounds[0,:],bounds[1,:], facecolor=color, alpha=0.5)
     plt.grid(True);
     plt.xlabel('Noise'); plt.ylabel('Aperiodic Exponent');
